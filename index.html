@@ -71,82 +71,84 @@
 </script>
 
 <section id="home" 
-  class="section flex justify-around items-center w-[100vw] h-[100vh] relative 
-         bg-gradient-to-r from-violet-600 via-blue-700 to-white text-white
-         sm:flex-col sm:h-auto sm:pt-28">
+  class="section flex flex-col justify-between w-[100vw] h-[100vh]
+         bg-gradient-to-r from-violet-600 via-blue-700 to-white text-white">
 
-  <!-- LEFT -->
-  <div class="home-left flex flex-col justify-center h-full ml-28 text-white
-              sm:ml-0 sm:text-center sm:items-center sm:h-auto sm:w-full">
+  <!-- TOP CONTENT (ROW) -->
+  <div class="flex justify-around items-center w-full h-[80%]">
 
-    <p class="font-[poppins]">SUCCESSFUL COACHES ARE VISIONARIES</p>
+    <!-- LEFT -->
+    <div class="home-left flex flex-col justify-center ml-28 text-white">
+      <p class="font-[poppins]">SUCCESSFUL COACHES ARE VISIONARIES</p>
 
-    <h1 class="text-[3rem] font-[poppins] font-extrabold leading-1
-               sm:text-[2rem] sm:leading-tight">
-      Good <span class="text-sky-500">coaching</span> is <br>
-      good teaching & <br>
-      nothing else.
-    </h1>
+      <h1 class="text-[3rem] font-[poppins] font-extrabold leading-1">
+        Good <span class="text-sky-500">coaching</span> is <br>
+        good teaching & <br>
+        nothing else.
+      </h1>
 
-    <div class="flex gap-8 sm:flex-col sm:items-center">
-      <button class="border-2 border-white w-40 p-2 rounded-lg font-bold text-lg mt-6">
-        View Courses
-      </button>
-      <p class="pt-3 font-[poppins] font-bold mt-6">Get Free Consultation</p>
+      <div class="flex gap-8">
+        <button class="border-2 border-white w-40 p-2 rounded-lg font-bold text-lg mt-6">
+          View Courses
+        </button>
+        <p class="pt-3 font-[poppins] font-bold mt-6">Get Free Consultation</p>
+      </div>
+
+      <div class="relative w-[420px] mt-10">
+        <input 
+          type="text"
+          placeholder="What do you want to learn today?"
+          class="w-full p-4 pr-20 rounded-lg font-bold text-black"
+        />
+
+        <button 
+          class="absolute right-2 top-1/2 -translate-y-1/2
+                 bg-gradient-to-r from-blue-800 to-violet-600 text-white 
+                 px-4 py-2 rounded-lg flex gap-2">
+          <svg width="20px" viewBox="0 0 640 640">
+            <path d="..."></path>
+          </svg>
+          Search
+        </button>
+      </div>
     </div>
 
-    <div class="relative w-[420px] mt-10 sm:w-[90%]">
-      <input
-        type="text"
-        placeholder="What do you want to learn today?"
-        class="w-full p-4 pr-20 rounded-lg font-bold text-black"
-      />
-
-      <button
-        class="absolute right-2 top-1/2 -translate-y-1/2 
-               bg-gradient-to-r from-blue-800 to-violet-600 text-white 
-               px-4 py-2 rounded-lg flex gap-2">
-        <svg width="20px"><path d="..."></path></svg>
-        Search
-      </button>
+    <!-- CENTER -->
+    <div class="home-center border-l-2 pl-8 font-[poppins]">
+      <h2 class="font-bold">Shyam</h2>
+      <p>
+        In a coaching role, you ask the <br>
+        questions and rely more on your <br>
+        staff, who become the experts, to <br>
+        provide the information. <br>
+        <span class="text-blue-900 font-extrabold">4.9</span>
+      </p>
     </div>
+
+    <!-- RIGHT -->
+    <div class="home-right mr-20 mt[15rem]">
+      <img src="images/hero.png" />
+    </div>
+
   </div>
 
-  <!-- CENTER -->
-  <div class="home-center mb-[250px] border-l-2 pl-8 font-[poppins]
-              sm:mb-0 sm:border-l-0 sm:border-t sm:pt-5 sm:text-center sm:w-full">
+  <!-- ⭐ FOOTER WITH BRAND ICONS (ADDED) -->
+  <div
+    class="home-bottom border-t border-white w-full p-4 flex items-center justify-evenly
+           bg-gradient-to-r from-violet-700 via-blue-600 to-white pb-[2rem]">
 
-    <h2 class="font-bold">Shyam</h2>
-    <p>
-      In a coaching role, you ask the <br>
-      questions and rely more on your <br>
-      staff, who become the experts, to <br>
-      provide the information. <br>
-      <span class="text-blue-900 font-extrabold">4.9</span>
-    </p>
-  </div>
+    <span class="w-32"><img src="images/spotify.png" /></span>
+    <span class="w-28"><img src="images/amazon.png" /></span>
+    <span class="w-32"><img src="images/spotify.png" /></span>
+    <span class="w-20"><img src="images/cisco.png" /></span>
+    <span class="w-28"><img src="images/logitech.png" /></span>
+    <span class="w-28"><img src="images/amazon.png" /></span>
 
-  <!-- RIGHT -->
-  <div class="home-right mr-20 sm:mr-0 sm:w-[80%] sm:flex sm:justify-center">
-    <img src="images/hero.png" class="sm:w-full sm:max-w-[350px]">
   </div>
 
 </section>
 
-<!-- FOOTER ICONS -->
-<div
-  class="home-bottom border-t border-white w-full p-4 flex items-center justify-evenly
-         bg-gradient-to-r from-violet-700 via-blue-600 to-white pb-[2rem]
-         sm:flex-wrap sm:gap-5 sm:py-6">
 
-  <span class="w-32 sm:w-20"><img src="images/spotify.png" /></span>
-  <span class="w-28 sm:w-16"><img src="images/amazon.png" /></span>
-  <span class="w-32 sm:w-20"><img src="images/spotify.png" /></span>
-  <span class="w-20 sm:w-14"><img src="images/cisco.png" /></span>
-  <span class="w-28 sm:w-20"><img src="images/logitech.png" /></span>
-  <span class="w-28 sm:w-16"><img src="images/amazon.png" /></span>
-
-</div>
 
 <section id="about" class="section w-[100vw] h-auto relative bg-[#E0F2FF] text-black pt-5">
 <h1 class="text-[2rem] text-center mt-[5rem] font-serif font-bold">Featured <span class="text-blue-600">Course</span></h1>
