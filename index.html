@@ -69,84 +69,94 @@
     dropdown.classList.toggle("hidden");
   });
 </script>
+<section
+  id="home"
+  class="section flex flex-col justify-around items-center w-[100vw] h-[100vh] relative
+         bg-gradient-to-r from-violet-600 via-blue-700 to-white text-white pt-[7rem] sm:h-auto">
 
+  <div class="flex flex-row items-center sm:flex sm:flex-col sm:h-auto">
 
-<section id="home" 
-    class="section flex flex-row justify-around items-center w-[100vw] min-h-[100vh] 
-           relative bg-gradient-to-r from-violet-600 via-blue-700 to-white 
-           text-white pt-[7rem]">
+    <!-- LEFT CONTENT -->
+    <div class="home-left flex flex-col justify-center text-white">
+      <p class="font-[poppins]">SUCCESSFUL COACHES ARE VISIONARIES</p>
 
-    <div class="flex flex-row items-center 
-                sm:flex-col sm:gap-10 
-                lg:flex-row xl:flex-row 2xl:flex-row 
-                container mx-auto px-6 lg:px-10 xl:px-16 2xl:px-20">
+      <h1 class="text-[3rem] font-[poppins] font-extrabold leading-1">
+        Good <span class="text-sky-500">coaching</span> is <br>
+        good teaching & <br>
+        nothing else.
+      </h1>
 
-        <div class="home-left flex flex-col justify-center text-white">
-            <p class="font-[poppins]">
-                SUCCESSFUL COACHES ARE VISIONARIES
-            </p>
+      <div class="flex gap-8">
+        <button class="border-2 border-white w-40 p-2 rounded-lg font-bold text-lg mt-6">
+          View Courses
+        </button>
 
-            <h1 class="text-[3rem] font-[poppins] font-extrabold leading-1">
-                Good <span class="text-sky-500">coaching</span> is <br>
-                good teaching & <br>
-                nothing else.
-            </h1>
+        <p class="pt-3 font-[poppins] font-bold mt-6">Get Free Consultation</p>
+      </div>
 
-            <div class="flex gap-8">
-                <button class="border-2 border-white w-40 p-2 rounded-lg font-bold text-lg mt-6">
-                    View Courses
-                </button>
-                <p class="pt-3 font-[poppins] font-bold mt-6">
-                    Get Free Consultation
-                </p>
-            </div>
+      <!-- SEARCH BAR -->
+      <div class="relative w-[420px] mt-10">
+        <input
+          type="text"
+          placeholder="What do you want to learn today?"
+          class="w-full p-4 pr-20 rounded-lg font-bold text-black"
+        />
 
-            <div class="relative w-[420px] mt-10">
-                <input 
-                    type="text"
-                    placeholder="What do you want to learn today?"
-                    class="w-full p-4 pr-20 rounded-lg font-bold text-black"
-                />
+        <button
+          class="absolute right-2 top-1/2 -translate-y-1/2 bg-gradient-to-r
+                 from-blue-800 to-violet-600 text-white px-4 py-2 rounded-lg flex gap-2 ml-10">
 
-                <button 
-                    class="absolute right-2 top-1/2 -translate-y-1/2 bg-gradient-to-r 
-                           from-blue-800 to-violet-600 text-white px-4 py-2 rounded-lg 
-                           flex gap-2 ml-10">
-                    Search
-                </button>
-            </div>
-        </div>
-        <div class="home-center mb-[250px] ml-[200px] border-l-2 pl-8 font-[poppins] 
-                    sm:ml-0 sm:mb-0 sm:mt-10 sm:mr-0">
-
-            <h2 class="font-bold">Shyam</h2>
-
-            <p>
-                In a coaching role, you ask the <br>
-                questions and rely more on your <br>
-                staff, who become the experts, to <br>
-                provide the information. <br>
-                <span class="text-blue-900 font-extrabold">4.9</span>
-            </p>
-        </div>
-
-        <div class="home-right mr-20 sm:mr-0 sm:mt-10">
-            <img src="images/hero.png">
-        </div>
-
+          <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <path d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 
+                     579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 
+                     440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 
+                     157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 
+                     351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 
+                     272C128 351.5 192.5 416 272 416z"/>
+          </svg>
+          Search
+        </button>
+      </div>
     </div>
-    <div class="home-bottom border-t border-white w-full p-4 flex items-center 
-                justify-evenly bg-gradient-to-r from-violet-700 via-blue-600 to-white 
-                pb-[2rem]">
-        <span class="w-32"><img src="images/spotify.png"></span>
-        <span class="w-28"><img src="images/amazon.png"></span>
-        <span class="w-32"><img src="images/spotify.png"></span>
-        <span class="w-20"><img src="images/cisco.png"></span>
-        <span class="w-28"><img src="images/logitech.png"></span>
-        <span class="w-28"><img src="images/amazon.png"></span>
+
+    <!-- CENTER (TESTIMONIAL) -->
+    <div class="home-center mb-[250px] ml-[200px] border-l-2 pl-8 font-[poppins]
+                sm:mt-10 sm:mr-10">
+      <h2 class="font-bold">Shyam</h2>
+
+      <p>
+        In a coaching role, you ask the <br>
+        questions and rely more on your <br>
+        staff, who become the experts, to <br>
+        provide the information. <br>
+        <span class="text-blue-900 font-extrabold">4.9</span>
+      </p>
     </div>
+
+    <!-- RIGHT HERO IMAGE -->
+    <div class="home-right mr-20">
+      <img src="images/hero.png" alt="Hero Image">
+    </div>
+
+  </div>
+
+  <!-- BOTTOM LOGO STRIP -->
+  <div
+    class="home-bottom border-t border-white w-full p-4 flex items-center justify-evenly
+           bg-gradient-to-r from-violet-700 via-blue-600 to-white pb-[2rem]">
+
+    <span class="w-32"><img src="images/spotify.png" /></span>
+    <span class="w-28"><img src="images/amazon.png" /></span>
+    <span class="w-32"><img src="images/spotify.png" /></span>
+    <span class="w-20"><img src="images/cisco.png" /></span>
+    <span class="w-28"><img src="images/logitech.png" /></span>
+    <span class="w-28"><img src="images/amazon.png" /></span>
+
+  </div>
 
 </section>
+
+
 
 
 
